@@ -6,7 +6,6 @@ body {
 body #game {
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
 }
 body #game h1 {
   font-family: "Press Start 2P", cursive;
@@ -26,10 +25,10 @@ body #game #buttons button {
   border: 0.2rem solid #282828;
   border-radius: 1rem;
   color: #282828;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   cursor: pointer;
   transition: 0.5s;
-  box-shadow: 0px 1px 2px 0px #3500D3, 1px 2px 4px 0px #3500D3, 2px 4px 8px 0px #3500D3, 2px 4px 16px 0px #3500D3;
+  box-shadow: 0px 1px 2px 0px #3500d3, 1px 2px 4px 0px #3500d3, 2px 4px 8px 0px #3500d3, 2px 4px 16px 0px #3500d3;
 }
 body #game #buttons button:hover {
   transform: translateY(5px);
@@ -38,4 +37,30 @@ body #game #buttons button:hover {
 body #game #buttons button:active {
   transform: translateY(5px);
   box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061, 2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+  html body {
+    padding: 4rem;
+  }
+  html body #game {
+    align-items: center;
+  }
+  html body #buttons {
+    flex-direction: column;
+    align-content: center;
+  }
+  html body #buttons button:nth-of-type(3) {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+  html body #buttons:hover, html body #buttons:active {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
 }/*# sourceMappingURL=style.css.map */

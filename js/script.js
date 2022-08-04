@@ -1,14 +1,9 @@
-// const btn = document.createElement("button");
-// btn.innerHTML = "Hello Button";
-// document.body.appendChild(btn);
-
-// console.log('Hello World');
-
 const userChoiceDisplay = document.createElement('h1');
 const computerChoiceDisplay = document.createElement('h1');
 const resultDisplay = document.createElement('h1');
 const gameGrid = document.getElementById('game');
 gameGrid.append(userChoiceDisplay, computerChoiceDisplay, resultDisplay);
+const buttonsWrapper = document.getElementById('buttons');
 
 const choices = ['rock', 'paper', 'scissors'];
 let userChoice;
@@ -17,13 +12,13 @@ let computerChoice;
 const generateComputerChoice = () => {
   const randomChoice = choices[Math.floor(Math.random() * choices.length)];
   computerChoice = randomChoice;
-  computerChoiceDisplay.innerHTML = 'Computer choice: ' + computerChoice
+  computerChoiceDisplay.innerHTML = 'Computer: ' + computerChoice
 };
 
 const handleClick = (e) => {
   console.log('clicked');
   userChoice = e.target.id;
-  userChoiceDisplay.innerHTML = 'User choice: ' + userChoice;
+  userChoiceDisplay.innerHTML = 'You: ' + userChoice;
   generateComputerChoice();
   getResult();
 };
@@ -33,7 +28,7 @@ for (let i = 0; i < choices.length; i++) {
   button.id = choices[i];
   button.innerHTML = choices[i];
   button.addEventListener('click', handleClick);
-  gameGrid.appendChild(button)
+  buttonsWrapper.appendChild(button)
 };
 
 const getResult = () => {

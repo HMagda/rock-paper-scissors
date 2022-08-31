@@ -11,16 +11,16 @@ let computerChoice;
 
 const generateComputerChoice = () => {
   const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-  computerChoice = randomChoice;
-  computerChoiceDisplay.innerHTML = 'Computer: ' + computerChoice
+  return randomChoice;
 };
 
 const handleClick = (e) => {
   console.log('clicked');
   userChoice = e.target.id;
   userChoiceDisplay.innerHTML = 'You: ' + userChoice;
-  generateComputerChoice();
-  getResult();
+  computerChoice = generateComputerChoice();
+  computerChoiceDisplay.innerHTML = 'Computer: ' + computerChoice;
+  determineAndShowResult();
 };
 
 for (let i = 0; i < choices.length; i++) {
@@ -31,22 +31,22 @@ for (let i = 0; i < choices.length; i++) {
   buttonsWrapper.appendChild(button)
 };
 
-const getResult = () => {
+const determineAndShowResult = () => {
   switch (userChoice + computerChoice) {
     case 'scissorspaper':
     case 'rockscissors':
     case 'paperrock':
-      resultDisplay.innerHTML = 'You win!';
+      resultDisplay.innerHTML = 'You WIN!';
       break;
     case 'paperscissors':
     case 'scissorsrock':
     case 'rockpaper':
-      resultDisplay.innerHTML = 'You lose!';
+      resultDisplay.innerHTML = 'You LOSE!';
       break;
     case 'paperpaper':
     case 'scissorsscissors':
     case 'rockrock':
-      resultDisplay.innerHTML = 'It is a draw!';
+      resultDisplay.innerHTML = 'It is a DRAW!';
       break;
   }
 }

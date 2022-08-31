@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0c0032;
+}
+body #game {
+  display: flex;
+  flex-direction: column;
+}
+body #game h1 {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 100;
+  color: #c2bdce;
+}
+body #game #buttons {
+  display: flex;
+  justify-content: center;
+}
+body #game #buttons button {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 500;
+  border: 0.2rem solid #282828;
+  border-radius: 1rem;
+  color: #282828;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 1px 2px 0px #3500d3, 1px 2px 4px 0px #3500d3, 2px 4px 8px 0px #3500d3, 2px 4px 16px 0px #3500d3;
+}
+body #game #buttons button:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061, 2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
+}
+body #game #buttons button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061, 2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+  html body {
+    padding: 4rem;
+  }
+  html body #game {
+    align-items: center;
+  }
+  html body #buttons {
+    flex-direction: column;
+    align-content: center;
+  }
+  html body #buttons button:nth-of-type(3) {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+  html body #buttons:hover, html body #buttons:active {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFDQSx1QkFBQTtFQUNBLHlCQUFBO0FDQ0o7QURDSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtBQ0NSO0FERVE7RUFDSSxzQ0FBQTtFQUNBLGdCQUFBO0VBQ0EsY0FBQTtBQ0FaO0FER1E7RUFDSSxhQUFBO0VBQ0EsdUJBQUE7QUNEWjtBREdZO0VBQ0ksYUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0Esc0NBQUE7RUFDQSxnQkFBQTtFQUNBLDRCQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFFQSwrR0FBQTtBQ0ZoQjtBREtnQjtFQUNJLDBCQUFBO0VBQ0EsK0dBQUE7QUNIcEI7QURPZ0I7RUFDSSwwQkFBQTtFQUNBLCtHQUFBO0FDTHBCOztBRGFBO0VBQ0k7SUFDSSxlQUFBO0VDVk47RURZTTtJQUNJLGFBQUE7RUNWVjtFRFlVO0lBQ0ksbUJBQUE7RUNWZDtFRGFVO0lBQ0ksc0JBQUE7SUFDQSxxQkFBQTtFQ1hkO0VEY2tCO0lBQ0ksOEJBQUE7SUFBQSwyQkFBQTtJQUFBLHNCQUFBO0VDWnRCO0VEZ0JjO0lBRUksOEJBQUE7SUFBQSwyQkFBQTtJQUFBLHNCQUFBO0VDZmxCO0FBQ0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

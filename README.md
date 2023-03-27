@@ -6,7 +6,7 @@ Rock-Paper-Scissors is a simple game implemented in JavaScript using HTML, SCSS 
 
 To get started with the game, follow these steps:
 
-1. Clone or download the repository from the Github repository
+1. Clone or download the repository
 2. Open your terminal and navigate to the project directory
 3. Run `npm install` to install the necessary dependencies
 4. Run `npm run watch` to start the development server and compile the code

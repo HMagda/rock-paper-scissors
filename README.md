@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors
 
-Rock-Paper-Scissors is a simple game implemented in JavaScript using HTML, SCSS, and JavaScript. The game allows users to play against the computer by selecting one of the three options - rock, paper, or scissors. The game then displays the user's choice, the computer's choice, and the result of the game.
+Rock-Paper-Scissors is a simple game implemented in JavaScript using HTML, SCSS (CSS preprocessor). The game allows users to play against the computer by selecting one of the three options - rock, paper, or scissors. The game then displays the user's choice, the computer's choice, and the result of the game.
 
 # Getting Started
 

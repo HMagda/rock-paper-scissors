@@ -1,7 +1,7 @@
 const userChoiceDisplay: HTMLHeadingElement = document.createElement('h1');
 const computerChoiceDisplay: HTMLHeadingElement = document.createElement('h1');
 const resultDisplay: HTMLHeadingElement = document.createElement('h1');
-const gameGrid: HTMLHeadingElement = document.getElementById('game')!;
+const gameGrid: HTMLElement = document.getElementById('game')!;
 gameGrid.append(userChoiceDisplay, computerChoiceDisplay, resultDisplay);
 const buttonsWrapper = document.getElementById('buttons')!;
 
@@ -16,7 +16,6 @@ const generateComputerChoice = (): string => {
 
 const handleClick = (e: MouseEvent): void => {
   userChoice = (e.target as HTMLElement).id;
-
   userChoiceDisplay.innerHTML = 'You: ' + userChoice;
   computerChoice = generateComputerChoice();
   computerChoiceDisplay.innerHTML = 'Computer: ' + computerChoice;

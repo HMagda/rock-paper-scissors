@@ -1,81 +1,81 @@
 body {
+  display: flex;
+  justify-content: center;
+  background-color: #0c0032;
+
+  #game {
     display: flex;
-    justify-content: center;
-    background-color: #0c0032;
+    flex-direction: column;
 
-    #game {
-        display: flex;
-        flex-direction: column;
-        // width: 50vw;
-
-        h1 {
-            font-family: "Press Start 2P", cursive;
-            font-weight: 100;
-            color: #c2bdce;
-        }
-
-        #buttons {
-            display: flex;
-            justify-content: center;
-
-            button {
-                padding: 1rem;
-                margin: 1rem;
-                font-size: 2rem;
-                font-family: "Press Start 2P", cursive;
-                font-weight: 500;
-                border: 0.2rem solid #282828;
-                border-radius: 1rem;
-                color: #282828;
-                background-color: #fafafa;
-                cursor: pointer;
-                transition: 0.5s;
-
-                box-shadow: 0px 1px 2px 0px #3500d3, 1px 2px 4px 0px #3500d3,
-                    2px 4px 8px 0px #3500d3, 2px 4px 16px 0px #3500d3;
-
-                &:hover {
-                    transform: translateY(5px);
-                    box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061,
-                        2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
-                }
-
-                &:active {
-                    transform: translateY(5px);
-                    box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061,
-                        2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
-                }
-            }
-        }
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-weight: 100;
+      color: #c2bdce;
+      text-align: center;
     }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+
+      button {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 2rem;
+        font-family: 'Press Start 2P', cursive;
+        font-weight: 500;
+        border: 0.2rem solid #282828;
+        border-radius: 1rem;
+        color: #282828;
+        background-color: #fafafa;
+        cursor: pointer;
+        transition: 0.5s;
+
+        box-shadow: 0px 1px 2px 0px #3500d3, 1px 2px 4px 0px #3500d3,
+          2px 4px 8px 0px #3500d3, 2px 4px 16px 0px #3500d3;
+
+        &:hover {
+          transform: translateY(5px);
+          box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061,
+            2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
+        }
+
+        &:active {
+          transform: translateY(5px);
+          box-shadow: 0px 1px 2px 0px #190061, 1px 2px 4px 0px #190061,
+            2px 4px 8px 0px #190061, 2px 4px 16px 0px #190061;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
-    html {
-        font-size: 20px;
+  body {
+    padding: 4rem;
 
-        body {
-            padding: 4rem;
+    #game {
+      align-items: center;
 
-            #game {
-                align-items: center;
-            }
+      h1 {
+        font-size: 25px;
+      }
+      #buttons {
+        flex-direction: column;
+        align-content: center;
 
-            #buttons {
-                flex-direction: column;
-                align-content: center;
-
-                button {
-                    &:nth-of-type(3) {
-                        max-width: min-content;
-                    }
-                }
-
-                &:hover,
-                &:active {
-                    max-width: min-content;
-                }
-            }
+        button {
+          &:nth-of-type(3) {
+            max-width: min-content;
+          }
         }
+
+        &:hover,
+        &:active {
+          max-width: min-content;
+        }
+      }
     }
+  }
 }

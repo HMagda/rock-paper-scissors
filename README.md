@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors
 
-Rock-Paper-Scissors is a simple game implemented in JavaScript using TypeScript, and SCSS (CSS preprocessor). The game allows users to play against the computer by selecting one of the three options - rock, paper, or scissors. The game then displays the user's choice, the computer's choice, and the result of the game.
+Rock-Paper-Scissors is a simple game implemented in JavaScript using TypeScript, and SCSS (CSS preprocessor). The game allows users to play against the computer by selecting one of the three options - rock, paper, or scissors, and then the user's choice, the computer's choice, and the result of the game are displayed. The game's aesthetic incorporates the distinctive pixelated style of the Press Start 2P font, immersing players in a charmingly retro atmosphere.
 
 # Getting Started
 
@@ -16,7 +16,7 @@ To get started with the game, follow these steps:
 To play the game, select one of the three options - rock, paper, or scissors. The computer will then randomly select one of the three options, and the result of the game will be displayed. The game uses a simple algorithm to determine the winner based on the rules of rock-paper-scissors.
 
 # Features
-- Simple and intuitive user interface
-- Responsive design that adapts to different screen sizes
-- Easy-to-understand game rules
-- Lightweight and fast-loading
+- Simple and intuitive user interface.
+- Responsive design that adapts to different screen sizes.
+- Easy-to-understand game rules.
+- Lightweight and fast-loading.
